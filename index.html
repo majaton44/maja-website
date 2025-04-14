@@ -377,7 +377,8 @@
               <span class="subheading">Contact Me</span>
               <h2 class="heading-secondary">Let's Bring Your Vision to Life</h2>
 
-              <form class="cta-form" name="contact" netlify>
+              <form class="cta-form" name="contact" method="POST" netlify>
+                <input type="hidden" name="form-name" value="contact" />
                 <label for="full-name">Full Name</label>
                 <input
                   id="full-name"

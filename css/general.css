@@ -1,0 +1,184 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /* colors */
+  --clr-dark-01: #0e0e0e;
+  --clr-dark-02: #131313;
+  --clr-accent-01: #7be0ad;
+  --clr-accent-02: #a38765;
+  --clr-accent-03: #d1ad84;
+  --clr-white: #ffffff;
+  --clr-cream: #f2f2f2;
+
+  /* font-sizes */
+  --fs-900: 6rem;
+  --fs-800: 5rem;
+  --fs-700: 3.6rem;
+  --fs-600: 2.8rem;
+  --fs-550: 2.4rem;
+  --fs-500: 2rem;
+  --fs-400: 1.8rem;
+  --fs-300: 1.6rem;
+  --fs-200: 1.4rem;
+
+  /* font-weight */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 700;
+
+  /* font-families */
+  --ff-sans: "Jost", sans-serif;
+  --ff-accent: "Poiret One", sans-serif;
+}
+
+/*=============== RESET ===============*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== BASE ===============*/
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+  color: var(--clr-white);
+  background-color: var(--clr-dark-01);
+  overflow-x: hidden;
+}
+
+/*=============== GENERAL REUSABLE COMPONENTS ===============*/
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 8rem;
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-white);
+}
+
+.heading-primary {
+  font-size: var(--fs-800);
+  color: var(--clr-dark-01);
+  line-height: 1.2;
+  margin-bottom: 4.8rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3.2rem;
+  letter-spacing: 1.2px;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: var(--fw-medium);
+  color: var(--clr-accent-01);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 1.6rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  position: relative;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-white);
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  color: var(--clr-dark-01);
+  background-color: var(--clr-accent-03);
+}
+
+.btn--full:hover,
+.btn--full:active {
+  color: var(--clr-white);
+  background-color: var(--clr-accent-02);
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: var(--clr-cream);
+  color: var(--clr-dark-01);
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #cccbc3;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(226, 178, 124, 0.45);
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/b90a5182d5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <title>Maja Aleksikj | Architect & 3D Artist Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <a href="index.html" class="logo">maja<span>aleksikj</span></a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#about" class="main-nav-link">About Me</a></li>
+          <li><a href="#highlights" class="main-nav-link">Highlights</a></li>
+          <li>
+            <a href="#testimonials" class="main-nav-link">Testimonials</a>
+          </li>
+          <li><a href="gallery.html" class="main-nav-link">Gallery</a></li>
+          <li><a href="#cta" class="main-nav-link nav-cta">Contact me</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-slider">
+            <img
+              src="img/R2 - Exterior Hero.webp"
+              alt="Exterior visualization of a house"
+            />
+          </div>
+          <div class="hero-text">
+            <h1 class="heading-primary">
+              Transforming Ideas into Stunning Visuals
+            </h1>
+            <a href="#cta" class="btn btn--hero">Let’s Create Together</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT ME -->
+      <section class="section-about-me" id="about">
+        <div class="about-me container grid grid--2-cols grid--center-v">
+          <div class="about-me-text-box">
+            <span class="subheading">About Me</span>
+            <h2 class="heading-secondary">
+              Hi, I’m Maja Aleksikj,<br />
+              an architect and 3D artist
+            </h2>
+            <p class="about-me-description">
+              With over 8 years of experience in high-quality, photorealistic
+              visualizations and a strong architectural background, I specialize
+              in bringing designs to life through 3D modeling and rendering.
+              From interiors and exteriors to 3D floor plans, I focus on
+              precision, aesthetics, and storytelling.
+            </p>
+            <div class="about-me-meta">
+              <div>
+                <p class="about-me-large-num" data-target="250">0</p>
+                <p>Projects Completed</p>
+              </div>
+              <div>
+                <p class="about-me-large-num" data-target="60">0</p>
+                <p>Happy Clients</p>
+              </div>
+              <div>
+                <p class="about-me-large-num" data-target="500">0</p>
+                <p>Renders Delivered</p>
+              </div>
+            </div>
+            <a href="#cta" class="btn btn--full margin-right-sm"
+              >Let’s Create Together</a
+            >
+            <a href="#highlights" class="btn btn--outline"
+              >Latest Works &darr;</a
+            >
+            <div></div>
+          </div>
+          <div class="about-me-img-box">
+            <img
+              class="about-me-img"
+              src="img/maja2.webp"
+              alt="photo of Maja"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- HIGHLIGHTS -->
+      <section class="section-highlights" id="highlights">
+        <div class="container">
+          <span class="subheading">Highlights</span>
+          <h2 class="heading-secondary">
+            From Initial Concept to High-Quality Photorealism
+          </h2>
+        </div>
+
+        <div class="highlight-card container grid grid--3-cols grid--center-v">
+          <!-- Project 1 -->
+          <div class="highlight-image" data-aos="fade-up">
+            <img src="img/Highlight - 01.webp" alt="Render" />
+          </div>
+          <div class="highlight-info" data-aos="fade-up">
+            <h3 class="heading-tertiary">Modern House</h3>
+            <p class="highlight-type">Exterior Design | Residential</p>
+            <p class="highlight-description">
+              A sleek two-story residential home featuring a striking black
+              marble facade, clean lines, and a minimalist modern aesthetic.
+              Responsible for full 3D modeling, texturing, and rendering.
+            </p>
+            <div class="highlight-tools">
+              <img src="img/programs/3ds-max-full-logo.svg" alt="3Ds Max" />
+              <img
+                src="img/programs/coronarenderer-svgrepo-com.svg"
+                alt="Corona Renderer"
+              />
+              <img
+                src="img/programs/Adobe_Photoshop_CC_icon.svg"
+                alt="Photoshop"
+              />
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="highlight-info" data-aos="fade-up">
+            <h3 class="heading-tertiary">Minimalist Kitchen</h3>
+            <p class="highlight-type">Interior Design | Residential</p>
+            <p class="highlight-description">
+              A sophisticated black kitchen design with a minimalist aesthetic,
+              featuring high-end finishes, seamless cabinetry, and elegant
+              lighting. 3D modeling, texturing, and rendering.
+            </p>
+            <div class="highlight-tools">
+              <img src="img/programs/3ds-max-full-logo.svg" alt="3Ds Max" />
+              <img
+                src="img/programs/coronarenderer-svgrepo-com.svg"
+                alt="Corona Renderer"
+              />
+              <img
+                src="img/programs/Adobe_Photoshop_CC_icon.svg"
+                alt="Photoshop"
+              />
+            </div>
+          </div>
+          <div class="highlight-image" data-aos="fade-up">
+            <img src="img/Highlight - 02.webp" alt="Render" />
+          </div>
+
+          <!-- Project 3 -->
+          <div class="highlight-image" data-aos="fade-up">
+            <img src="img/Highlight - 03.webp" alt="Render" />
+          </div>
+          <div class="highlight-info" data-aos="fade-up">
+            <h3 class="heading-tertiary">Hotel Café Bar</h3>
+            <p class="highlight-type">Commercial Interior | Hospitality</p>
+            <p class="highlight-description">
+              A refined and inviting café bar design featuring natural wood
+              tones, perforated metal elements, and warm ambient lighting. Full
+              3D visualization completed.
+            </p>
+            <div class="highlight-tools">
+              <img src="img/programs/3ds-max-full-logo.svg" alt="3Ds Max" />
+              <img src="img/programs/V-Ray Icon.svg" alt="Vray Renderer" />
+              <img
+                src="img/programs/Adobe_Photoshop_CC_icon.svg"
+                alt="Photoshop"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="container all-gallery">
+          <a href="gallery.html" class="btn--seemore">See More &rarr;</a>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">Testimonials</span>
+          <h2 class="heading-secondary">Happy Clients Across the Globe</h2>
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                src="img/flags/flag-australia.jpg"
+                alt="Flag of Australia"
+              />
+              <blockquote class="testimonial-text">
+                <span class="quote">&#8220;</span>
+                Always a fantastic experience working with Maja. She is
+                incredibly efficient, so helpful, and delivers such high-quality
+                work that we keep coming back time and again. Maja is an
+                absolute asset to our business, and we highly recommend her
+                services to others!
+                <span class="quote">&#8221;</span>
+              </blockquote>
+              <p class="testimonial-name">&mdash; Delyse W. & John M.</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                src="img/flags/United_States-flag.jpg"
+                alt="Flag of USA"
+              />
+              <blockquote class="testimonial-text">
+                <span class="quote">&#8220;</span>
+                Maja is one of the most talented, efficient, and responsive
+                freelancers I’ve had the privilege of working with. She’s highly
+                capable and exceeded our team’s expectations. We were truly
+                impressed and would hire her again in a heartbeat.
+                <span class="quote">&#8221;</span>
+              </blockquote>
+              <p class="testimonial-name">&mdash; Maggie S.</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                src="img/flags/United_States-flag.jpg"
+                alt="Flag of USA"
+              />
+              <blockquote class="testimonial-text">
+                <span class="quote">&#8220;</span>
+                Maja is our favorite architect. She listens to your needs and
+                goals, and with almost exact precision, delivers exactly what
+                you want. She responds quickly, meets deadlines, and is a true
+                professional and expert in her field. Highly recommended and
+                will use again.
+                <span class="quote">&#8221;</span>
+              </blockquote>
+              <p class="testimonial-name">&mdash; Phillip F.</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                src="img/flags/flag-square-ger.jpg"
+                alt="Flag of Gremany"
+              />
+              <blockquote class="testimonial-text">
+                <span class="quote">&#8220;</span>
+                Working with Maja is seamless. She understands the brief
+                quickly, asks the right questions, and delivers high-quality,
+                spot-on work. Her attention to detail, speed, and communication
+                make her stand out, which is why I keep returning.
+                <span class="quote">&#8221;</span>
+              </blockquote>
+              <p class="testimonial-name">&mdash; Lukas M.</p>
+            </figure>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-1.webp"
+              alt="3D Render"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-2.webp"
+              alt="3D Render"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-3.webp"
+              alt="3D Render"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-4.webp"
+              alt="3D Render"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-5.webp"
+              alt="3D Render"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-6.webp"
+              alt="3D Render"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-7.webp"
+              alt="3D Render"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-8.webp"
+              alt="3D Render"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-9.webp"
+              alt="3D Render"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-10.webp"
+              alt="3D Render"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-11.webp"
+              alt="3D Render"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-12.webp"
+              alt="3D Render"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <span class="subheading">Contact Me</span>
+              <h2 class="heading-secondary">Let's Bring Your Vision to Life</h2>
+
+              <form class="cta-form" name="contact" netlify>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="John Smith"
+                  name="full-name"
+                  required
+                />
+                <label for="email">E-Mail address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  name="email"
+                  required
+                />
+                <label for="cta-description">Message</label>
+                <textarea
+                  id="cta-description"
+                  placeholder="Tell me about your project!"
+                  name="message"
+                  required
+                ></textarea>
+                <button class="btn--form">Send Message</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Architect sketching"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container grid grid--3-cols">
+        <div class="logo-col">
+          <a href="index.html" class="logo footer-logo"
+            >maja<span>aleksikj</span></a
+          >
+
+          <ul class="social-links">
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.upwork.com/freelancers/majaaleksikj44"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="social-icon fa-brands fa-upwork"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.linkedin.com/in/maja-aleksikj-a5330716a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="social-icon fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.behance.net/majaaleksik44"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="social-icon fa-brands fa-behance"></i
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2025</span> by Maja A.
+          </p>
+        </div>
+        <div>
+          <p class="footer-heading">Contact</p>
+          <div>
+            <a class="footer-link" href="mailto:majaaleksik44@gmail.com"
+              >majaaleksik44@gmail.com</a
+            >
+            <p class="footer-link footer-address">Have a project in mind?</p>
+            <p class="footer-link footer-address">Let’s bring it to life!</p>
+          </div>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Quick Menu</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#about">About Me</a></li>
+            <li><a class="footer-link" href="#highlights">Highlights</a></li>
+            <li>
+              <a class="footer-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li><a class="footer-link" href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <div class="modal" id="image-modal">
+      <span class="close-btn">&times;</span>
+      <img class="modal-content" id="modal-img" />
+    </div>
+  </body>
+</html>

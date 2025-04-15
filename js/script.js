@@ -57,39 +57,102 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ////////////////////////////////
 // Open Gallery Images in Full Screen (For both Index and Gallery Pages)
-// Ensure the modal code works for gallery images
+// Modal setup
+// Modal setup
 const modal = document.getElementById("image-modal");
 const modalImg = document.getElementById("modal-img");
 const closeBtn = document.querySelector(".close-btn");
 
-// Open gallery images in full screen
-document
-  .querySelectorAll(".gallery-item img, .main-gallery-item img")
-  .forEach((img) => {
-    img.addEventListener("click", () => {
-      modal.style.display = "block";
-      modalImg.src = img.dataset.full || img.src;
-    });
-  });
+// Collect all gallery images
+const galleryImages = Array.from(
+  document.querySelectorAll(".gallery-item img, .main-gallery-item img")
+);
+let currentIndex = 0;
 
-// Close modal on click of close button
+// Open image in modal
+galleryImages.forEach((img, index) => {
+  img.addEventListener("click", () => {
+    currentIndex = index;
+    modal.style.display = "block";
+    modalImg.src = img.dataset.full || img.src;
+  });
+});
+
+// Close modal on close button click
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
-// Close modal if click outside image
+// Close modal when clicking outside image
 window.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.style.display = "none";
   }
 });
 
-// Close modal with ESC
+// Close modal with Escape key
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && modal.style.display === "block") {
     modal.style.display = "none";
   }
+
+  // Navigate with Arrow Keys
+  if (modal.style.display === "block") {
+    if (e.key === "ArrowRight") {
+      updateImageIndex(1);
+    } else if (e.key === "ArrowLeft") {
+      updateImageIndex(-1);
+    }
+  }
 });
+
+// Function to update the image index and update the modal image source
+function updateImageIndex(direction) {
+  currentIndex =
+    (currentIndex + direction + galleryImages.length) % galleryImages.length;
+  modalImg.src =
+    galleryImages[currentIndex].dataset.full || galleryImages[currentIndex].src;
+}
+
+// Optional: Create navigation arrows inside modal
+function createArrowBtn(direction) {
+  const btn = document.createElement("div");
+  btn.classList.add("arrow-btn", direction); // Added the 'arrow-btn' class
+  btn.innerHTML = direction === "left" ? "&#10094;" : "&#10095;";
+  btn.addEventListener("click", () => {
+    updateImageIndex(direction === "left" ? -1 : 1);
+  });
+  modal.appendChild(btn);
+}
+
+createArrowBtn("left");
+createArrowBtn("right");
+
+// Mobile swipe support
+let touchStartX = 0;
+let touchEndX = 0;
+
+modal.addEventListener("touchstart", (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+modal.addEventListener("touchend", (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  const swipeThreshold = 50; // Minimum px to consider swipe
+  if (modal.style.display !== "block") return;
+
+  if (touchEndX < touchStartX - swipeThreshold) {
+    // Swiped left → next image
+    updateImageIndex(1);
+  } else if (touchEndX > touchStartX + swipeThreshold) {
+    // Swiped right → previous image
+    updateImageIndex(-1);
+  }
+}
 
 ////////////////////////////////
 // Animate numbers

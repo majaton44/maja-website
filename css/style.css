@@ -491,6 +491,7 @@
 
 .footer-address {
   margin-top: 2.4rem;
+  cursor: pointer;
 }
 
 .footer-link,
@@ -634,4 +635,24 @@
   to {
     opacity: 1;
   }
+}
+
+/* Navigation Arrows */
+.modal .arrow-btn {
+  position: absolute;
+  top: 50%;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1001;
+  transform: translateY(-50%);
+}
+
+.modal .arrow-btn.left {
+  left: 20px;
+}
+
+.modal .arrow-btn.right {
+  right: 20px;
 }

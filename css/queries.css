@@ -258,6 +258,10 @@
   .gallery-img-description {
     display: none;
   }
+
+  .arrow-btn {
+    display: none;
+  }
 }
 
 /* ********************** */
